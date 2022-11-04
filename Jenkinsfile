@@ -40,7 +40,7 @@ pipeline {
             steps {
                 sh """
                 sudo pip3 install checkov
-                // checkov -d .
+               
                 checkov -d . --skip-check CKV_AWS_79
                 """
             }
